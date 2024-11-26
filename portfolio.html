@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucas</title>
+    <style>
+        /* Cores da paleta */
+        :root {
+            --bg-color: #eef2f3; /* Fundo geral */
+            --text-color: #333333; /* Cor principal do texto */
+            --header-bg: #4e8ea3; /* Fundo do cabeçalho */
+            --header-text: #ffffff; /* Texto do cabeçalho */
+            --nav-bg: #3b6b82; /* Fundo do menu de navegação */
+            --nav-text: #ffffff; /* Texto dos links */
+            --nav-hover: #64b0c4; /* Cor de hover nos links */
+            --card-bg: #ffffff; /* Fundo dos cards */
+            --card-shadow: rgba(0, 0, 0, 0.1); /* Sombra dos cards */
+            --footer-bg: #3b6b82; /* Fundo do rodapé */
+            --footer-text: #ffffff; /* Texto do rodapé */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--nav-bg);
+            padding: 10px;
+        }
+
+        nav a {
+            color: var(--nav-text);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--nav-hover);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 8px var(--card-shadow);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--header-bg);
+        }
+
+        footer {
+            text-align: center;
+            background-color: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lucas - Futuro engenheiro de Dados</h1>
+        <p>Iniciante, mas com muita dedicação!</p>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <main>
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Lucas e estou iniciando minha jornada na área de engenharia de dados. Tenho interesse em me especializar em dados. Estou aprendendo a utilizar ferramentas como SQL, SPARK, POWERBI e NiFi.</p>
+        </section>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li>Projeto 1: Criação de pipelines em SQL para análise de dados.</li>
+                <li>Projeto 2: Transformação de dados estruturados e não estruturados em JSON.</li>
+                <li>Projeto 3: Dashboard interativo para stakeholders usando Power BI.</li>
+            </ul>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: <a href="mailto:lucaszmp011@gmail.com">Clique aqui</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-melo-8a0148268/" target="_blank">Clique aqui</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Lucas Melo - engenheiro de Dados</p>
+    </footer>
+</body>
+</html>
