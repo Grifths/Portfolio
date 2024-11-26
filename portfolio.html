@@ -5,109 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Lucas</title>
     <style>
-        /* Cores da paleta */
-        :root {
-            --bg-color: #eef2f3; 
-            --text-color: #333333; 
-            --header-bg: #4e8ea3; 
-            --header-text: #ffffff; 
-            --nav-bg: #3b6b82;
-            --nav-text: #ffffff; 
-            --nav-hover: #64b0c4; 
-            --card-bg: #ffffff; 
-            --card-shadow: rgba(0, 0, 0, 0.1); 
-            --footer-bg: #3b6b82; 
-            --footer-text: #ffffff; 
-        }
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: #f5f5f0;
+            color: #4b2e2e;
         }
-
         header {
-            background-color: var(--header-bg);
-            color: var(--header-text);
+            background-color: #8b4513;
+            color: #fff;
             text-align: center;
             padding: 20px 0;
         }
-
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
-
         header p {
             font-size: 1.2em;
         }
-
         nav {
             display: flex;
             justify-content: center;
-            background-color: var(--nav-bg);
+            background-color: #4b2e2e;
             padding: 10px;
         }
-
         nav a {
-            color: var(--nav-text);
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
-
         nav a:hover {
-            color: var(--nav-hover);
+            text-decoration: underline;
         }
-
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: var(--card-bg);
-            box-shadow: 0 4px 8px var(--card-shadow);
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         section {
             margin-bottom: 20px;
         }
-
         h2 {
-            color: var(--header-bg);
+            color: #8b4513;
         }
-
         footer {
             text-align: center;
-            background-color: var(--footer-bg);
-            color: var(--footer-text);
+            background-color: #4b2e2e;
+            color: #fff;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
         }
-
         footer p {
             margin: 0;
             font-size: 0.9em;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+            main {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            footer p {
+                font-size: 0.8em;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Lucas - Futuro engenheiro de Dados</h1>
+        <h1>Lucas - Engenheiro de Dados</h1>
         <p>Iniciante, mas com muita dedicação!</p>
     </header>
     <nav>
         <a href="#sobre">Sobre</a>
+        <a href="#educacao">Educação</a>
+        <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
     </nav>
     <main>
         <section id="sobre">
             <h2>Sobre Mim</h2>
-            <p>Olá! Meu nome é Lucas e estou iniciando minha jornada na área de engenharia de dados. Tenho interesse em me especializar em dados. Estou aprendendo a utilizar ferramentas como SQL, SPARK, POWERBI e NiFi.</p>
+            <p>Olá! Meu nome é Lucas e estou iniciando minha jornada na área de engenharia de dados. Tenho interesse em organizar e transformar dados para gerar insights valiosos. Estou aprendendo a utilizar ferramentas como SQL, JSON, ETL e visualização de dados.</p>
+        </section>
+        <section id="educacao">
+            <h2>Educação</h2>
+            <p>Licenciatura em Ciência da Computação - Universidade X</p>
+            <p>Curso de Engenharia de Dados - Plataforma Y</p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <p>Engenheiro de Dados Júnior - Empresa ABC</p>
+            <p>Estagiário em Análise de Dados - Empresa XYZ</p>
         </section>
         <section id="projetos">
             <h2>Projetos</h2>
@@ -119,12 +125,12 @@
         </section>
         <section id="contato">
             <h2>Contato</h2>
-            <p>Email: <a href="mailto:lucaszmp011@gmail.com">Clique aqui</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/lucas-melo-8a0148268/" target="_blank">Clique aqui</a></p>
+            <p>Email: <a href="mailto:lucas@example.com">lucas@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/lucas" target="_blank">linkedin.com/in/lucas</a></p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Lucas Melo - engenheiro de Dados</p>
+        <p>&copy; 2024 Lucas - Engenheiro de Dados</p>
     </footer>
 </body>
 </html>
